@@ -1,0 +1,319 @@
+/*
+Theme Name: Dashboard Canvas
+Theme URI: 
+Description: Basic theme for styling a login page and client dashboard.
+Version: 1.0
+Author: Hart & Vine
+Author URI: https://hartandvine.com/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+
+/**
+ * Normalize and Elements
+ */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, figure {
+	margin: 0;
+	padding: 0;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 93.75%;
+	line-height: 1.8em;
+	background-color: #fff;
+	height: 100%;
+}
+body {
+	-webkit-tap-highlight-color: transparent;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	color: #222;
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+[hidden], template {
+	display: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td, th {
+	padding: 0;
+}
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+a {
+	background: transparent;
+	-webkit-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
+	outline: 0;
+	text-decoration: none;
+}
+a, a:visited {
+	color: #59b276;
+}
+a:hover, a:focus {
+	color: #3c7e52;
+}
+::-moz-selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+ul {
+	list-style: none outside;
+}
+
+
+
+/**
+ * Layout
+ */
+
+.container:before, .container:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.container:after {
+	clear: both;
+}
+ .container {
+	zoom: 1;
+}
+.container {
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+
+/**
+ * Main Header
+ */
+
+.main-nav {
+	background-color: #222;
+	margin-bottom: 60px;
+}
+.main-nav ul {
+	position: relative;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 3.75em;
+	font-weight: 400;
+}
+.main-nav ul li {
+	float: left;
+	margin-right: 30px;
+	position: relative;
+	display: block;
+}
+.main-nav ul a {
+	display: block;
+	color: #fff;
+}
+.main-nav ul a:hover {
+	color: #59b276;
+}
+.main-nav ul a.active {
+	color: #59b276;
+}
+.main-nav .utility {
+	float: right;
+	position: relative;
+	margin-top: 15px;
+}
+.main-nav .utility a {
+	color: #59b276;
+	font-size: 12px;
+	font-size: .75rem;
+	line-height: 1.5em;
+	font-weight: 400;
+	margin-left: 15px;
+}
+.main-nav .utility a:hover {
+	color: #fff;
+}
+
+
+
+/**
+ * Typography
+ */
+
+.post-content h1 {
+	font-size: 24px;
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+}
+.post-content p {
+	margin-bottom: 1.625rem;
+}
+.post-content ul {
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+}
+.post-content ul li {
+	padding: 4px 10px 4px 30px;
+	border-bottom: 1px solid #999;
+}
+
+
+
+/**
+ * Login
+ */
+
+body.login {
+	font-size: 93.75%;
+	line-height: 1.8em;
+	background-color: #ddd;
+	min-height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-family: 'Open Sans', sans-serif;
+}
+body.login div#login {
+	padding: 50px 0;
+	width: 320px;
+}
+body.login div#login h1 a {
+	background: url(./images/logo.svg) 0 0 no-repeat;
+	width: 180px;
+	height: 92px;
+	display: block;
+	margin: 0 auto 25px;
+	outline: 0 none;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+body.login form {
+	background-color: #fff;
+	padding: 36px 24px 46px;
+	margin-top: 20px;
+}
+body.login form p label {
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #272b2a;
+	display: block;
+}
+body.login input.input {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	border: 1px solid #272b2a;
+	height: 52px;
+	line-height: 52px;
+	padding: 0 15px;
+	width: 100%;
+	margin: 10px 0 22px;
+	border-radius: 2px;
+	color: #434a53;
+}
+body.login input.input:focus {
+	border-color: #59b276;
+	box-shadow: none;
+}
+body.login p.forgetmenot, body.login p.login-remember {
+	display: none;
+}
+body.login input#wp-submit {
+	text-shadow: none;
+	box-shadow: none;
+	float: none;
+	background-color: #59b276;
+	line-height: 52px;
+	height: 52px;
+	padding: 0 25px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 2px;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	-webkit-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+}
+body.login input#wp-submit:hover, body.login input#wp-submit:focus {
+	background-color: #3c7e52;
+	-webkit-transform: none;
+	transform: none;
+}
+body.login p#nav {
+	margin-top: 24px;
+	padding: 0 24px;
+	font-size: 13px;
+	line-height: 20px;
+}
+body.login p#nav a {
+	color: #999;
+	-webkit-transition: color 0.2s ease-out;
+	transition: color 0.2s;
+}
+body.login p#nav a:hover {
+	color: #59b276;
+}
+body.login p#backtoblog {
+	display: none;
+}
+body.login #login_error {
+	font-size: 12px;
+	box-shadow: none;
+}
+body.login #login_error strong {
+	letter-spacing: 2px;
+}
